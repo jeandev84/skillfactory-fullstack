@@ -1,0 +1,50 @@
+1. БОКОВАЯ МЕНЮ в VS Code
+Проводник
+Поиск
+Работа с Гитом
+Запуска кода
+Расшеренеи
+
+
+2. Settings VS code (Plugins)
+
+autosave
+Plugin Russian Language
+
+2. Emmet
+
+!(Tab or enter)
+
+Tag div:
+
+HTML Template
+# DIV
+.block (enter)  <div class="block"></div>
+
+# ANY TAG
+article.theme   <article class="theme"></article>
+
+# UL list
+ul>li*5 (enter) 5 numbers of elements will be inside the li 
+
+# LOREM IPSUM
+lorem (enter)
+lorem10
+
+
+Style Template
+mt (enter) margin-top: 50px (example)
+
+
+
+Plugins
+=====================================================
+HTMLHint (подсказывет ошибки в коде)
+Beautify (делает красивый синтакс)
+Image preview (подсказывет  какое изображение подключили)
+CSS Navigation (быстро переключиться к css навигации) (Выьераем класс и нажимаем alt + f12 ) перенаправить файл css где у нас написано стил
+Auto Rename Tag (Позволяет переименовать тег автоматически)
+Live Server
+
+
+

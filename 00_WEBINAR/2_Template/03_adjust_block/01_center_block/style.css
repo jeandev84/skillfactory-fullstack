@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-section {
+    padding: 40px 0;
+}
+
+.fixed-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1240px;
+    background-color: violet;
+    height: 70vh;
+    position: relative;
+}
+
+.wrapper {
+    background-color: turquoise;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -500px;
+    width: 1000px;
+    text-align: center;
+    height: 200px;
+}
+
+.block {
+    background-color: green;
+    display: inline-block;
+    height: 50%; /* 50px, 100%, 100vh, 50vh */
+}
+
+.text {
+    color: white;
+    margin: 10px;
+}

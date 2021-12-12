@@ -1,0 +1,141 @@
+/*
+p {
+    max-width: 500px;
+    position: relative;
+}
+
+
+p::before {
+    content: "Текст перед";
+    color: red;
+}
+
+
+p::after {
+    content: "Текст после";
+    color: red;
+}
+
+*/
+
+/* Tooltip */
+p {
+    max-width: 500px;
+    position: relative;
+    /* font-size: 20px; */
+}
+
+
+/* p:before - it's a pseudo element */
+p::before {
+    content: "Подсказка"; 
+    color: #fff;
+    background-color: blueviolet;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    opacity: 0;
+}
+
+
+/* p:hover - it's a pseudo class */
+p:hover::before {
+   opacity: 1;
+}
+
+
+
+ol {
+    list-style: none;
+    counter-reset: numbers; /* определяем переменную, которую дальше будем использовать в pseudo-element */
+    font-size: 18px;
+}
+
+
+
+li::before {
+    counter-increment: numbers;
+    content: "0" counter(numbers);
+    font-size: 30px;
+    color: violet;
+}
+
+
+/* Create a right-arrow hover */
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+a::after{
+    content: "";
+    margin-left: 5px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url(img/right-arrow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+}
+
+
+a:hover::after {
+   transition: 0.3s;
+   transform: translateX(20px);
+}
+
+
+/* First Letter */
+p::first-letter {
+    color: green;
+}
+
+
+/* First Line */
+p::first-line {
+   color: tomato;
+}
+
+
+/* Input Placeholder чтобы применить например цвет placeholder в input */
+input {
+    margin-top: 20px;
+    display: block;
+    font-size: 20px;
+}
+
+
+input::placeholder {
+    color: lightblue;
+    transition: 0.5s;
+}
+
+
+/* сработает как ввходим курсор */
+input:focus::placeholder {
+    color: transparent;
+    transition: 0.5s;
+}
+
+
+/* стилизуем цвет как будем выделять нашего текста */
+p::selection {
+    color: #fff;
+    background-color: tomato;
+}
+
+
+
+/* Marker pseudo */
+ul li::marker {
+    color: red;
+}
+
+
+/* Backdrop (Modal Okno) */

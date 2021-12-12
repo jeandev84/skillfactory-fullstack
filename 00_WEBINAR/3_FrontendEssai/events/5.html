@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listenner</title>
+    <style>
+         body div {
+             padding: 50px;
+             border: 1px solid black;
+         }
+
+         body .div_1 {
+             width: 768px;
+             margin: 0 auto;
+         }
+    </style>
+</head>
+<body>
+    <div class="div_1">
+        div 1
+
+        <div class="div_2">
+            div 2
+
+            <div class="div_3">
+                div 3
+            </div><!-- /.div_3 -->
+
+        </div><!-- /.div_2 -->
+
+    </div><!-- /.div_1-->
+
+    <script>
+
+        document.querySelector('.div_1').addEventListener('click', (event) => {
+
+             event.stopPropagation()
+             
+             console.log(event.target)
+             console.log(event.target.textContent)
+             console.log(event.currentTarget)
+
+        });
+
+       
+
+        // target - это ссылка на элемент на который сработал это событие но всплывается
+        // currentTarget - это ссылка на конкретный элемент на который сработал это собитые.
+        
+    </script>
+</body>
+</html>

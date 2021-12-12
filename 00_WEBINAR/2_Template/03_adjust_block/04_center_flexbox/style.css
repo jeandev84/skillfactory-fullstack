@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto-Regular';
+}
+
+
+.main-section {
+    padding: 40px 0;
+}
+
+
+.fixed-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1240px;
+    background-color: darkgray;
+    display: flex;
+    align-items: center; /* Выравнивание по вертикалу */
+    justify-content: space-around; /* Выравнивание по горизонталу */
+    flex-wrap: wrap;
+    height: 1000px;
+}
+
+/*
+Не нужно wrapper!!! когда используем flex.
+.wrapper {
+    background-color: green;
+    padding: 20px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+*/
+
+.block {
+    background-color: green;
+    height: 100px;
+    margin: 20px;
+    border-radius: 1rem;
+    border: 1px solid blueviolet;
+}
+
+
+.text {
+    color: white;
+    margin: 0;
+    line-height: 100px;
+    text-align: center;
+    padding: 0 5px;
+}

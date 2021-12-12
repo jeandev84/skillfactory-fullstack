@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вебинар</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    
+    <button id="open">Вход на сайт</button>
+    <!-- 
+    по умолчанию тег dialog невиден чтобы было видно добавить аттрибут open (<dialog open></dialog>)
+    <dialog open>
+        <form>
+            <p><input name="login" required placeholder="Логин"></p>
+            <p><input name="pass" required placeholder="Пароль"></p>
+            <p><button type="submit">Войти</button> <button id="close">Закрыт окно</button></p>
+        </form>
+    </dialog>
+    -->
+    <!-- Скрили диалог неуказно просто open -->
+    <dialog>
+        <form>
+            <p><input name="login" required placeholder="Логин"></p>
+            <p><input name="pass" required placeholder="Пароль"></p>
+            <p><button type="submit">Войти</button> <button id="close">Закрыт окно</button></p>
+        </form>
+    </dialog>
+
+    <script src="/script.js"></script>
+</body>
+</html>
